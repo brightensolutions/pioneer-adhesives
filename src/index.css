@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom styles for Navbar animations */
+
+
+.group-hover\:text-customBlue:hover {
+  color: #2569ac; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.group-hover\:text-customRed:hover {
+  color: #a2373a;
+}
+
+
+
+.group-hover\:text-customBlue::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2569ac;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.group-hover\:text-customBlue:hover::before {
+  transform: scaleX(1);
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+:root {
+  --d: 5000ms;
+  --angle: 100deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+.box {
+  font-size: 3vw;
+  border: 0.33rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), #a2373a 0.1turn, #2569ac 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  animation: borderRadial var(--d) linear infinite forwards;
+  border-radius: 10px;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 10deg;
+  inherits: false;
+}
+
+
+.threed_text {
+  text-transform: uppercase;
+
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #a2373a,
+      1px 2px 1px #a2373a,
+      1px 3px 1px #a2373a,
+      1px 4px 1px #a2373a,
+      1px 5px 1px #a2373a,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #a2373a,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.text_shedow{
+  text-shadow: 0px 5px 0px midnightblue;
+}
+
+
+/* Define the keyframes for vertical movement */
+@keyframes vertical-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the distance here */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the container */
+.animate-vertical {
+  animation: vertical-move 2s ease-in-out infinite; /* Adjust duration and easing as needed */
+}
+
+.welcome_border{
+  border-radius: 50px 10px;
 }
