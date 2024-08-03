@@ -11,6 +11,12 @@ import partner7 from "../Images/partner7.jpg";
 import partner8 from "../Images/partner8.png";
 import partner9 from "../Images/partner9.jpg";
 import partner10 from "../Images/partner10.jpg";
+import Rubber_Repair_Protection from "../Images/Rubber_Repair_Protection.jpg";
+import Welding_Consumables from "../Images/Welding_Consumables.jpg";
+import electrical_tapes from "../Images/electrical-tapes.webp";
+import ips_product from "../Images/lps_product.png";
+import threeMsefty  from "../Images/3Msefty.png";
+import auto_light from "../Images/auto_light.webp";
 export {
     logo,
     bg_img_slider,
@@ -24,5 +30,11 @@ export {
     partner7,
     partner8,
     partner9,
-    partner10
+    partner10,
+    Rubber_Repair_Protection,
+    Welding_Consumables,
+    electrical_tapes,
+    ips_product,
+    threeMsefty,
+    auto_light 
 }

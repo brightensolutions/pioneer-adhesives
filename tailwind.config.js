@@ -16,6 +16,9 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
       },
+      boxShadow: {
+        'product_card': '0px 0px 8px 2px #2569ac',
+      },
     },
   },
   plugins: [],

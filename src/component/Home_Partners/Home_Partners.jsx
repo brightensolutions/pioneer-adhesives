@@ -1,8 +1,38 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9, partner10 } from '../../Images/Images';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+  partner8,
+  partner9,
+  partner10,
+} from "../../Images/Images";
+import SectionTitle from "../Function/Function";
+
+// Custom arrow component
+const CustomArrow = ({ className, style, onClick }) => (
+  <div
+    className={`${className} custom-arrow`}
+    style={{
+      ...style,
+      display: "block",
+      marginTop: "20px",
+      marginLeft: "auto",
+      marginRight: "auto",
+    }}
+    onClick={onClick}
+  >
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>{" "}
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </div>
+);
 
 const Home_Partners = () => {
   const partners = [
@@ -15,7 +45,7 @@ const Home_Partners = () => {
     { id: 7, logo: partner7 },
     { id: 8, logo: partner8 },
     { id: 9, logo: partner9 },
-    { id: 10, logo: partner10 }
+    { id: 10, logo: partner10 },
   ];
 
   const settings = {
@@ -25,6 +55,8 @@ const Home_Partners = () => {
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
+    nextArrow: <CustomArrow />,
+    prevArrow: <CustomArrow />,
     responsive: [
       {
         breakpoint: 2000,
@@ -54,15 +86,30 @@ const Home_Partners = () => {
   };
 
   return (
-    <div className='bg-customBlue py-[50px]'>
-      <div className='lg:max-w-[1440px] px-[20px] m-auto'>
-        <Slider {...settings}>
-          {partners.map((partner) => (
-            <div key={partner.id} className='flex items-center justify-center'>
-              <img src={partner.logo} alt={`Partner ${partner.id}`} className='max-w-[150px]' />
-            </div>
-          ))}
-        </Slider>
+    <div className="bg-customBlue py-[50px]">
+      <div className="lg:max-w-[1440px] px-[20px] m-auto">
+        <div>
+          <div className="text-center mb-[50px]">
+          <SectionTitle title="Our Business Partner"/>
+          </div>
+
+          <div className="lg:mt-[100px]">
+            <Slider {...settings}>
+              {partners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className="flex items-center justify-center"
+                >
+                  <img
+                    src={partner.logo}
+                    alt={`Partner ${partner.id}`}
+                    className="max-w-[150px]"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
     </div>
   );
