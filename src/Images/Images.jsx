@@ -17,6 +17,17 @@ import electrical_tapes from "../Images/electrical-tapes.webp";
 import ips_product from "../Images/lps_product.png";
 import threeMsefty  from "../Images/3Msefty.png";
 import auto_light from "../Images/auto_light.webp";
+import LeakRepai from "../Images/LeakRepai.jpg";
+import mseal from "../Images/mseal.png";
+import MASSEALINGSYSTEMS from "../Images/MASSEALINGSYSTEMS.jpg";
+import industrialcleaner  from "../Images/industrial-cleaner-.webp";
+import CommercialConstruction from "../Images/CommercialConstruction.jpg";
+import hylomarproducts from "../Images/hylomarproducts.jpg";
+import about_us_bg from "../Images/about_us_bg.webp";
+import customer1 from "../Images/customer1.jpg";
+import customer2 from "../Images/customer2.jpg";
+import customer3 from "../Images/customer4.jpg"
+import bg_pluse from "../Images/titlebg.webp";
 export {
     logo,
     bg_img_slider,
@@ -36,5 +47,16 @@ export {
     electrical_tapes,
     ips_product,
     threeMsefty,
-    auto_light 
+    auto_light,
+    LeakRepai,
+    mseal,
+    MASSEALINGSYSTEMS,
+    industrialcleaner,
+    CommercialConstruction,
+    hylomarproducts,
+    about_us_bg,
+    customer1,
+    customer2,
+    customer3,
+    bg_pluse 
 }

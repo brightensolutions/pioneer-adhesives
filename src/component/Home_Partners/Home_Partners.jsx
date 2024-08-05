@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion"; // Import framer-motion
 import {
   partner1,
   partner2,
@@ -14,7 +15,7 @@ import {
   partner9,
   partner10,
 } from "../../Images/Images";
-import SectionTitle from "../Function/Function";
+import { SectionTitle } from "../Function/Function";
 
 // Custom arrow component
 const CustomArrow = ({ className, style, onClick }) => (
@@ -29,8 +30,8 @@ const CustomArrow = ({ className, style, onClick }) => (
     }}
     onClick={onClick}
   >
-    <i class="fa fa-chevron-right" aria-hidden="true"></i>{" "}
-    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    <i className="fa fa-chevron-right" aria-hidden="true"></i>{" "}
+    <i className="fa fa-chevron-right" aria-hidden="true"></i>
   </div>
 );
 
@@ -90,24 +91,46 @@ const Home_Partners = () => {
       <div className="lg:max-w-[1440px] px-[20px] m-auto">
         <div>
           <div className="text-center mb-[50px]">
-          <SectionTitle title="Our Business Partner"/>
+            <SectionTitle title="Our Business Partner" />
           </div>
 
           <div className="lg:mt-[100px]">
             <Slider {...settings}>
               {partners.map((partner) => (
-                <div
+                <motion.div
                   key={partner.id}
                   className="flex items-center justify-center"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   <img
                     src={partner.logo}
                     alt={`Partner ${partner.id}`}
                     className="max-w-[150px]"
                   />
-                </div>
+                </motion.div>
               ))}
             </Slider>
+          </div>
+
+          <div className="lg:mt-[50px] flex flex-wrap gap-[30px] justify-center">
+            {partners.map((partner) => (
+              <motion.div
+                key={partner.id}
+                className="flex items-center justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: partner.id * 0.1, ease: "easeOut" }}
+                whileHover={{ scale: 1.1, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)" }}
+              >
+                <img
+                  src={partner.logo}
+                  alt={`Partner ${partner.id}`}
+                  className="sm:w-[163px]"
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

@@ -2,23 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* Custom styles for Navbar animations */
 
-
 .group-hover\:text-customBlue:hover {
-  color: #2569ac; 
+  color: #2569ac;
 }
 
 .group-hover\:text-customRed:hover {
   color: #a2373a;
 }
 
-
-
 .group-hover\:text-customBlue::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -33,7 +28,6 @@
 .group-hover\:text-customBlue:hover::before {
   transform: scaleX(1);
 }
-
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
@@ -50,12 +44,25 @@
   font-size: 3vw;
   border: 0.33rem solid;
   padding: 3vw;
-  border-image: conic-gradient(from var(--angle), var(--c2), #a2373a 0.1turn, #2569ac 0.15turn, var(--c2) 0.25turn) 30;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      #a2373a 0.1turn,
+      #2569ac 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
   animation: borderRotate var(--d) linear infinite forwards;
 }
 
 .box:nth-child(2) {
-  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c2) 40%
+    )
+    30;
   animation: borderRadial var(--d) linear infinite forwards;
   border-radius: 10px;
 }
@@ -89,38 +96,27 @@
   }
 }
 
-
 @property --angle {
   syntax: "<angle>";
   initial-value: 10deg;
   inherits: false;
 }
 
-
 .threed_text {
   text-transform: uppercase;
 
   font-weight: 700;
-  text-shadow: 1px 1px 1px #a2373a,
-      1px 2px 1px #a2373a,
-      1px 3px 1px #a2373a,
-      1px 4px 1px #a2373a,
-      1px 5px 1px #a2373a,
-      1px 6px 1px #919191,
-      1px 7px 1px #919191,
-      1px 8px 1px #919191,
-      1px 9px 1px #919191,
-      1px 10px 1px #a2373a,
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4);
+  text-shadow: 1px 1px 1px #a2373a, 1px 2px 1px #a2373a, 1px 3px 1px #a2373a,
+    1px 4px 1px #a2373a, 1px 5px 1px #a2373a, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #a2373a, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
-.text_shedow{
+.text_shedow {
   text-shadow: 0px 5px 0px midnightblue;
 }
-
 
 /* Define the keyframes for vertical movement */
 @keyframes vertical-move {
@@ -140,7 +136,7 @@
   animation: vertical-move 2s ease-in-out infinite; /* Adjust duration and easing as needed */
 }
 
-.welcome_border{
+.welcome_border {
   border-radius: 50px 10px;
 }
 
@@ -156,15 +152,68 @@
   right: 48%;
 }
 
-.slick-prev:before, .slick-next:before {
-  font-family: 'slick';
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
   font-size: 36px !important;
 }
 
-.title_shadow{
+.title_shadow {
   box-shadow: -1px 4px 12px darkslateblue;
 }
 
-.product_card{
+.product_card {
   box-shadow: 0px 0px 8px 2px #2569ac;
+}
+
+.start_img {
+  z-index: 99999999;
+}
+
+.start_img::after {
+  content: "";
+  background-image: url("../src/Images/bg-plus.webp");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 30%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.since_div {
+  background: linear-gradient(67deg, #2569ac80, #a2373b65);
+  padding: 62px 54px;
+  border-radius: 17px 85px 17px 85px;
+  box-shadow: 2px 8px 1px #A2373A;
+  border: 1px solid #A2373A;
+}
+
+.title_Section {
+  padding: 8px 56px;
+  border-radius: 120px 2px 120px 1px;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.product-card {
+  opacity: 0; /* Initial state */
+  transform: translate3d(0, 100%, 0); /* Initial state */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product-card.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

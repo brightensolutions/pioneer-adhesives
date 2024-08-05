@@ -1,8 +1,15 @@
 import React from "react";
 import { logo } from "../../Images/Images";
 import { NavLink } from "react-router-dom";
+import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
+
   const NavbarMenu = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About Us", link: "/aboutus" },
@@ -12,47 +19,55 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-[#e5e7eb] border-b-[1px] border-customRed">
-      <div className="lg:max-w-[1440px] m-auto px-[20px]">
-        <div className="flex justify-between items-center">
-          <div>
-            <img src={logo} alt="logo" className="lg:w-[300px]" />
-          </div>
+    <div>
+      <div className="bg-[#e5e7eb] border-b-[1px] border-customRed">
+        <div className="lg:max-w-[1440px] m-auto px-[20px]">
+          <div className="flex justify-between items-center">
+            <div>
+              <img src={logo} alt="logo" className="xl:w-[300px] lg:w-[251px] md:w-[174px]" />
+            </div>
 
-          <div>
-            <nav>
-              <ul className="flex lg:gap-[50px]">
-                {NavbarMenu.map((item) => (
-                  <li
-                    key={item.id}
-                    className="lg:text-[18px] font-semibold font-raleway relative group"
-                  >
-                    <NavLink
-                      to={item.link}
-                      className={({ isActive }) =>
-                        isActive
-                          ? "text-customRed relative border-b-2 border-customRed pb-1 hover:border-none" 
-                          : "text-customBlue relative group-hover:text-customBlue pb-1"
-                      }
+            <div>
+              <nav>
+                <ul className="flex lg:gap-[18px] xl:gap-[50px] mg:gap-[9px]">
+                  {NavbarMenu.map((item) => (
+                    <li
+                      key={item.id}
+                      className="lg:text-[18px] font-semibold font-raleway relative group md:text-[14px]"
                     >
-                      {item.name}
-                      <span className="absolute bottom-0 left-0 w-full h-[2px] bg-customBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
+                      <NavLink
+                        to={item.link}
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-customRed relative border-b-2 border-customRed pb-1 hover:border-none"
+                            : "text-customBlue relative group-hover:text-customBlue pb-1"
+                        }
+                      >
+                        {item.name}
+                        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-customBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-          <div>
-            <NavLink
-              to="/contactus"
-              className="lg:text-[18px] font-semibold font-raleway bg-customBlue text-white px-[40px] py-[15px] rounded-[10px] border-[1px] border-customRed transition duration-300 hover:bg-customRed hover:text-white"
-            >
-              Contact Us
-            </NavLink>
+            <div>
+              <NavLink
+                to="/contactus"
+                className="lg:text-[17px] xl:text-[18px]font-semibold md:text-[12px] font-raleway bg-customBlue text-white px-[40px] py-[15px] rounded-[10px] border-[1px] border-customRed transition duration-300 hover:bg-customRed hover:text-white md:py-[14px] md:px-[18px]"
+              >
+                Contact Us
+              </NavLink>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="block lg:hidden">
+          <div>
+
+          </div>
       </div>
     </div>
   );

@@ -1,15 +1,30 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./component/Navbar/Navbar";
 import Home from "./component/Home/Home";
+import ProductDetail from "./component/ProductDetail/ProductDetail";
+import Footer from "./component/Footer/Footer";
+import ScrollToTop from "./component/ScrollToTop";
+import Product from "./component/Product/Product";
+import Aboutus from "./component/Aboutus/Aboutus";
+import Partners from "./component/Partners/Partners";
+import Contactus from "./component/Contactus/Contactus";
+
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <Router>
+      <ScrollToTop />
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/productview/:id" element={<ProductDetail />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/contactus" element={<Contactus />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </Router>
   );
 };
 
