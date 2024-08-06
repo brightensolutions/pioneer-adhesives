@@ -28,6 +28,16 @@ import customer1 from "../Images/customer1.jpg";
 import customer2 from "../Images/customer2.jpg";
 import customer3 from "../Images/customer4.jpg"
 import bg_pluse from "../Images/titlebg.webp";
+import customer4 from "../Images/customer3.jpg";
+import customer6 from "../Images/customer6.png";
+import customer7 from "../Images/customer7.png";
+import customer8 from "../Images/customer8.png";
+import customer9 from "../Images/customer9.png";
+import customer10 from "../Images/customer10.png";
+import customer11 from "../Images/customer11.png";
+import customer12 from "../Images/customer12.png";
+import customer13 from "../Images/customer13.png";
+import customer14 from "../Images/customer14.png";
 export {
     logo,
     bg_img_slider,
@@ -57,6 +67,16 @@ export {
     about_us_bg,
     customer1,
     customer2,
+    customer4,
+    bg_pluse,
     customer3,
-    bg_pluse 
+    customer6,
+    customer7, 
+    customer8,
+    customer9,
+    customer10,
+    customer11,
+    customer12,
+    customer13,
+    customer14
 }

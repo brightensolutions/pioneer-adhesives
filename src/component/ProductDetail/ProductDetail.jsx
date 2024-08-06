@@ -21,6 +21,12 @@ const ProductDetail = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5 } },
     };
 
+    // WhatsApp message URL
+    const whatsappMessage = encodeURIComponent(
+        `Hello, I am interested in the product "${product.title}". Here are the details:\n\n${product.description}\n\nProduct Image: ${product.image}\n\nPlease contact me at +91 98251 20450.`
+    );
+    const whatsappUrl = `https://wa.me/919825120450?text=${whatsappMessage}`;
+
     return (
         <div className="product-detail-container bg-[#fff0f5] py-[50px] overflow-hidden">
             <div className="lg:max-w-[1440px] m-auto px-[20px] py-[50px]">
@@ -61,7 +67,14 @@ const ProductDetail = () => {
                             </div>
                         )}
                         <div className='mt-[20px]'>
-                            <button className="bg-customRed text-white py-[10px] px-[20px] rounded-[5px] mt-auto text-[18px]">Contact Us</button>
+                            <a 
+                                href={whatsappUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-customRed text-white py-[10px] px-[20px] rounded-[5px] mt-auto text-[18px] text-center inline-block"
+                            >
+                                Contact Us
+                            </a>
                         </div>
                     </motion.div>
                 </div>

@@ -9,6 +9,7 @@ import Product from "./component/Product/Product";
 import Aboutus from "./component/Aboutus/Aboutus";
 import Partners from "./component/Partners/Partners";
 import Contactus from "./component/Contactus/Contactus";
+import Home_Customers from "./component/Home_Customers/Home_Customers";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/clients" element={<Home_Customers />} />
         <Route path="/contactus" element={<Contactus />} />
       </Routes>
       <Footer />
