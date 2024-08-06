@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-[#e5e7eb] border-b-[1px] border-customRed">
+      <div className="bg-[#e5e7eb] border-b-[1px] border-customRed md:block hidden">
         <div className="lg:max-w-[1440px] m-auto px-[20px]">
           <div className="flex justify-between items-center">
             <div>
@@ -65,9 +65,45 @@ const Navbar = () => {
       </div>
 
       <div className="block lg:hidden">
-          <div>
-
+        <div>
+          <div className="flex justify-between px-[20px] items-center top-0 fixed bg-white w-[100%] border-b-[2px] border-customRed" style={{ zIndex: "99" }}>
+            <div>
+              <img src={logo} alt="logo" className="xl:w-[300px] lg:w-[251px] md:w-[174px] w-[215px]" />
+            </div>
+            <div>
+              <button onClick={toggleDrawer} className="text-[36px]"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
           </div>
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction='right'
+            className='bla bla bla'
+          >
+            <div>
+              <ul className="flex gap-[18px] flex-col px-[20px] py-[30px]">
+                {NavbarMenu.map((item) => (
+                  <li
+                    key={item.id}
+                    className="lg:text-[18px] font-semibold font-raleway relative group md:text-[14px]"
+                  >
+                    <NavLink
+                      to={item.link}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-customRed relative border-b-2 border-customRed pb-1 hover:border-none"
+                          : "text-customBlue relative group-hover:text-customBlue pb-1"
+                      }
+                    >
+                      {item.name}
+                      <span className="absolute bottom-0 left-0 w-full h-[2px] bg-customBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Drawer>
+        </div>
       </div>
     </div>
   );

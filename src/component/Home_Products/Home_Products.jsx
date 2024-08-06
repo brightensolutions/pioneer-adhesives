@@ -7,8 +7,8 @@ import { SectionTitle } from "../Function/Function";
 
 const ProductItem = ({ image, title, id }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Only trigger once
-    threshold: 0.1, // Trigger when 10% of the item is visible
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
   const variants = {
@@ -27,7 +27,7 @@ const ProductItem = ({ image, title, id }) => {
         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)", 
         transition: { duration: 0.3 } 
       }}
-      className="xl:w-[22%] lg:w-[29.9%]  product-card product_card rounded-t-[10px] flex flex-col bg-white"
+      className="xl:w-[22%] lg:w-[29.9%]  product-card product_card rounded-t-[10px] flex flex-col bg-white "
     >
       <div>
         <img
@@ -228,7 +228,7 @@ export const products = [
 
 const Home_Products = () => {
   return (
-    <div className="bg-[#cfc9c954] lg:py-[100px]">
+    <div className="bg-[#cfc9c954] lg:py-[100px] py-[50px]">
       <div className="lg:max-w-[1440px] m-auto px-[20px]">
         <div className="text-center lg:mb-[50px]">
           <SectionTitle
@@ -237,7 +237,7 @@ const Home_Products = () => {
             bgColor="#2569ac"
           />
         </div>
-        <div className="lg:mt-[100px] flex lg:flex-row flex-wrap  lg:gap-[48px] xl:gap-[49px] 2xl:gap-[50px]">
+        <div className="lg:mt-[100px] flex lg:flex-row flex-wrap  lg:gap-[48px] xl:gap-[49px] 2xl:gap-[50px] gap-[25px]">
           {products.map((product) => (
             <ProductItem
               key={product.id}
