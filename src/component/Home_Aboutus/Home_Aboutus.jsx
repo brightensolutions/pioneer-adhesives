@@ -12,11 +12,11 @@ const Home_Aboutus = () => {
   });
 
   return (
-    <div className='bg-[#fff0f5] lg:py-[100px] start_img relative'>
+    <div className='bg-[#fff0f5] lg:py-[100px] start_img relative px-[20px] py-[50px]'>
       <div className='lg:max-w-[1440px] m-auto'>
         <div className='flex lg:col-row lg:gap-[20px]'>
           <motion.div
-            className='lg:w-[50%] bg-cover bg-no-repeat bg-center relative'
+            className='lg:w-[50%] bg-cover bg-no-repeat bg-center relative hidden sm:block'
             style={{ backgroundImage: `url(${about_us_bg})`, backgroundSize: "cover" }}
             ref={aboutRef}
             initial={{ scale: 1.1 }}
@@ -30,19 +30,22 @@ const Home_Aboutus = () => {
           </motion.div>
 
           <motion.div
-            className='lg:w-[50%]'
+            className='lg:w-[50%] '
             ref={aboutRef}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 20 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            <div className='text-center lg:text-left'>
             <SectionTitle
               title="About Us"
               textColor="text-white"
               bgColor="#2569ac"
             />
+            </div>
+            
 
-            <div className='lg:mt-[50px]'>
+            <div className=' bg-[#ffffffbf] lg:bg-transparent p-[10px] rounded-[2px] ' >
               <motion.p
                 className='font-raleway lg:text-[19px] mb-[15px]'
                 initial={{ opacity: 0, y: 20 }}

@@ -74,13 +74,13 @@ const Home_Partners = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
         },
       },
     ],
@@ -90,11 +90,11 @@ const Home_Partners = () => {
     <div className="bg-customBlue py-[50px]">
       <div className="lg:max-w-[1440px] px-[20px] m-auto">
         <div>
-          <div className="text-center mb-[50px]">
+          <div className="text-center mb-[50px] ">
             <SectionTitle title="Our Business Partner" />
           </div>
 
-          <div className="lg:mt-[100px]">
+          <div className="lg:mt-[100px] hidden lg:block">
             <Slider {...settings}>
               {partners.map((partner) => (
                 <motion.div

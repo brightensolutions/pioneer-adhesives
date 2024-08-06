@@ -20,13 +20,13 @@ export const Title_page = ({ title }) => {
         backgroundImage: `url(${bg_pluse})`,
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgb(0 0 0 / 83%)',
         backgroundSize: '100% 100%',
         backgroundBlendMode: 'overlay',
         color: 'white',
       }}
     >
-      <h1 className="font-bold sm:text-[80px] font-raleway bg-[#94a3b861] inline-block title_Section">
+      <h1 className="font-bold md:text-[80px] sm:text-[45px] font-raleway bg-[#94a3b861] inline-block title_Section mt-[57px] sm:mt-0 text-[35px]">
         {title}
       </h1>
     </div>

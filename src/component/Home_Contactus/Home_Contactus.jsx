@@ -10,18 +10,18 @@ const Home_Contactus = () => {
     });
 
     return (
-        <div className='lg:py-[100px] bg-[#cfc9c99e] py-[50px]'>
+        <div className='lg:py-[100px] bg-[#cfc9c99e] py-[50px] overflow-hidden'>
             <div className='lg:max-w-[1440px] m-auto px-[20px]'>
-                <div className='flex lg:flex-row justify-between flex-col'>
+                <div className='flex lg:flex-row justify-between flex-col-reverse'>
                     <motion.div
-                        className='lg:w-[40%]'
+                        className='lg:w-[40%] mt-[50px] sm:mt-0'
                         ref={contactRef}
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: contactInView ? 1 : 0, x: contactInView ? 0 : -50 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
                         <div>
-                            <div className='text-center'>
+                            <div className='text-center hidden lg:block'>
                                 <SectionTitle
                                     title="Contact Us"
                                     textColor="text-white"
@@ -41,7 +41,7 @@ const Home_Contactus = () => {
                                     transition={{ duration: 0.3 }}
                                 >
                                     <span className='text-customRed lg:text-[55px] text-[50px] '><i className="fa fa-map-marker" aria-hidden="true"></i></span>
-                                    <p className='lg:text-[20px] font-poppins text-black text-center'>
+                                    <p className='lg:text-[20px] font-poppins text-black text-center md:text-left'>
                                         Pioneer Scaffolding And Painting Contractors 1004, Icon Business Center, Opp Central Mall, Piplod, Surat, Gujarat 395007
                                     </p>
                                 </motion.div>
@@ -68,12 +68,19 @@ const Home_Contactus = () => {
                     </motion.div>
 
                     <motion.div
-                        className='lg:w-[50%] mt-[50px] sm:mt-0'
+                        className='lg:w-[50%] '
                         ref={contactRef}
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: contactInView ? 1 : 0, x: contactInView ? 0 : 50 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
+                         <div className='text-center block lg:hidden'>
+                                <SectionTitle
+                                    title="Contact Us"
+                                    textColor="text-white"
+                                    bgColor="#2569ac"
+                                />
+                            </div>
                         <div className='bg-[#00000030] p-[25px] flex flex-col gap-[15px] border-[1px] border-black'>
                             <motion.div
                                 className='flex gap-[15px] md:flex-row flex-col'
