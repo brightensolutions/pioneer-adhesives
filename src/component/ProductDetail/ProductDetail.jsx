@@ -23,7 +23,7 @@ const ProductDetail = () => {
 
     // WhatsApp message URL
     const whatsappMessage = encodeURIComponent(
-        `Hello, I am interested in the product "${product.title}". Here are the details:\n\n${product.description}\n\nProduct Image: ${product.image}\n\nPlease contact me at +91 98251 20450.`
+        `Hello, I am interested in the product "${product.title}"`
     );
     const whatsappUrl = `https://wa.me/919825120450?text=${whatsappMessage}`;
 
