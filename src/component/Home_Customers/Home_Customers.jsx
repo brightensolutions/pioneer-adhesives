@@ -1,11 +1,11 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { customer1, customer10, customer11, customer12, customer13, customer14, customer2, customer3, customer4, customer6, customer7, customer8, customer9 } from '../../Images/Images';
+import { alt, amns, bayer, Birla, bpcl, customer1, customer10, customer11, customer12, customer13, customer14, customer2, customer3, customer4, customer6, customer7, customer8, customer9, gnfc, lt, ShellLogo, suzlonlogo } from '../../Images/Images';
 import { Title_page } from '../Function/Function';
 
 const customers = [
-  customer1, customer3, customer4, customer6, customer7, customer8, customer9, customer10, customer11, customer12, customer13, customer14
+  customer1, amns,customer6,lt,suzlonlogo,customer13,ShellLogo, customer4,bpcl, customer7, customer14,gnfc,bayer,customer10,Birla,
 ];
 
 const Home_Customers = () => {
@@ -39,7 +39,7 @@ const Home_Customers = () => {
             <motion.img
               key={index}
               src={customer}
-              className='bg-customBlue p-[1px] sm:w-[180px] w-[137px]'
+              className='bg-customBlue p-[1px] sm:w-[180px] w-[137px] min-h-[100px] max-h-[100px]'
               variants={imageVariants}
             />
           ))}

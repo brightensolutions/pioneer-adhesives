@@ -38,6 +38,24 @@ import customer11 from "../Images/customer11.png";
 import customer12 from "../Images/customer12.png";
 import customer13 from "../Images/customer13.png";
 import customer14 from "../Images/customer14.png";
+import threem from "../Images/3m.jpg";
+import niccoeng from "../Images/NICCO-Logo.png";
+import hempale from "../Images/hempale.webp";
+import jjgandhi from "../Images/jjgandhi.jpg";
+import aanadeng from "../Images/aanadeng.jpg";
+import AsianPaints from "../Images/AsianPaints.jpg";
+import barger from "../Images/barger.jpg";
+import mas from "../Images/mas.png";
+import pidilite from "../Images/pidilite.jpg";
+import amns from "../Images/amns.gif";
+import alt from "../Images/alt.gif";
+import lt from "../Images/lt.gif";
+import suzlonlogo from "../Images/suzlon-logo.png"; 
+import ShellLogo from "../Images/shell.png";
+import bpcl from "../Images/bpcl.png";
+import gnfc from "../Images/gnfc.png";
+import bayer from "../Images/bayer.png";
+import Birla from "../Images/Birla.png";
 export {
     logo,
     bg_img_slider,
@@ -78,5 +96,23 @@ export {
     customer11,
     customer12,
     customer13,
-    customer14
+    customer14,
+    threem,
+    niccoeng,
+    hempale,
+    jjgandhi,
+    aanadeng,
+    AsianPaints,
+    barger,
+    mas,
+    pidilite,
+    amns,
+    alt,
+    lt,
+    suzlonlogo,
+    ShellLogo,
+    bpcl,
+    gnfc,
+    bayer,
+    Birla
 }
