@@ -57,16 +57,16 @@ const Specialized = () => {
         ))}
       </Slider>
 
-      <div className="absolute inset-0 flex flex-col justify-center text-white bg-[#000e2ac9] bg-opacity-80 px-[20px]">
+      <div className="absolute inset-0 flex flex-col justify-center text-white  bg-opacity-80 px-[20px]">
         <div className="lg:max-w-[1440px] m-auto">
           <div className="flex lg:flex-row md:flex-row items-center flex-col-reverse">
             <motion.div
-              className="lg:w-[50%] bg-[#0000004a] lg:p-[44px] rounded-[10px] box w-[100%]"
+              className="lg:w-[50%] bg-[#f1f1f187] lg:p-[44px] rounded-[10px] box w-[100%]"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
-              <p className="lg:text-[29px] xl:text-[35px] text-center text-[26px] font-oxanium text-customRed font-bold bg-[#3d3d3e5e] pt-[5px] welcome_border border-[1px] border-[#ffffff12]">
+              <p className="lg:text-[29px] xl:text-[35px] text-center text-[26px] font-oxanium text-black font-bold bg-[#3d3d3e5e] pt-[5px] welcome_border border-[1px] border-[#ffffff12]">
                 Welcome To Our Website
               </p>
               <div className="flex flex-col items-center">
@@ -78,7 +78,7 @@ const Specialized = () => {
                 </p>
               </div>
               <motion.p
-                className="text-white font-raleway mt-[10px] md:text-[25px] lg:text-[20px] xl:text-[25px] text-[15px] sm:text-[18px] text-center"
+                className="text-black font-bold font-raleway mt-[10px] md:text-[25px] lg:text-[20px] xl:text-[25px] text-[15px] sm:text-[18px] text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}

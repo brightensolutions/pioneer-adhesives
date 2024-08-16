@@ -56,7 +56,36 @@ import bpcl from "../Images/bpcl.png";
 import gnfc from "../Images/gnfc.png";
 import bayer from "../Images/bayer.png";
 import Birla from "../Images/Birla.png";
+import Jkpaper from "../Images/jkpaprt.jpg";
+import leo from "../Images/leo.jpg";
+import neostructo from "../Images/neostructo.jpg";
+import sikka from "../Images/sikka.png";
+import bp from "../Images/bp.jpg";
+import ehes from "../Images/ehes.jpg";
+import gardenvarely from "../Images/gardenvarely.jpg";
+import gipcl from "../Images/gipcl.png";
+import gcpl from "../Images/gcpl.jpg";
+import itw from "../Images/itw.png";
+import sterling from "../Images/sterling (1).jpg"
+import uplltd from "../Images/uplltd.jpg";
+import yamai from "../Images/yamai.png";
+import zeeco from "../Images/zeeco.jpg";
+
 export {
+    Jkpaper,
+    leo,
+    neostructo,
+    sikka,
+    bp,
+    ehes,
+    gardenvarely,
+    gipcl,
+    gcpl,
+    itw,
+    sterling,
+    uplltd,
+    yamai,
+    zeeco,
     logo,
     bg_img_slider,
     logo2,
