@@ -42,7 +42,7 @@ import threem from "../Images/3m.jpg";
 import niccoeng from "../Images/NICCO-Logo.png";
 import hempale from "../Images/hempale.webp";
 import jjgandhi from "../Images/jjgandhi.jpg";
-import aanadeng from "../Images/aanadeng.jpg";
+import aanadeng from "../Images/aanadeng (1).jpg";
 import AsianPaints from "../Images/AsianPaints.jpg";
 import barger from "../Images/barger.jpg";
 import mas from "../Images/mas.png";
@@ -70,7 +70,8 @@ import sterling from "../Images/sterling (1).jpg"
 import uplltd from "../Images/uplltd.jpg";
 import yamai from "../Images/yamai.png";
 import zeeco from "../Images/zeeco.jpg";
-
+import coromandal from "../Images/coromandal.png";
+import LARSENTOURBO from "../Images/LARSENTOURBO.jpg";
 export {
     Jkpaper,
     leo,
@@ -143,5 +144,7 @@ export {
     bpcl,
     gnfc,
     bayer,
-    Birla
+    Birla,
+    coromandal,
+    LARSENTOURBO
 }
