@@ -72,6 +72,12 @@ import yamai from "../Images/yamai.png";
 import zeeco from "../Images/zeeco.jpg";
 import coromandal from "../Images/coromandal.png";
 import LARSENTOURBO from "../Images/LARSENTOURBO.jpg";
+import product1 from "../Images/product1.webp";
+import product2 from "../Images/product2.webp";
+import product3 from "../Images/product3.jpg";
+import product4 from "../Images/product4.webp";
+import product5 from "../Images/product5.jpg";
+import product6 from "../Images/product6.webp";
 export {
     Jkpaper,
     leo,
@@ -146,5 +152,11 @@ export {
     bayer,
     Birla,
     coromandal,
-    LARSENTOURBO
+    LARSENTOURBO,
+    product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6
 }

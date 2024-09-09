@@ -36,13 +36,13 @@ const Home_Aboutus = () => {
             animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 20 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className='text-center lg:text-left'>
+            {/* <div className='text-center lg:text-left'>
             <SectionTitle
               title="About Us"
               textColor="text-white"
               bgColor="#2569ac"
             />
-            </div>
+            </div> */}
             
 
             <div className=' bg-[#ffffffbf] lg:bg-transparent p-[10px] rounded-[2px] ' >
@@ -98,7 +98,7 @@ const Home_Aboutus = () => {
               </motion.p>
             </div>
 
-            <motion.div
+            {/* <motion.div
               className='inline-block'
               whileHover={{ scale: 1.05, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
               transition={{ duration: 0.3 }}
@@ -109,7 +109,7 @@ const Home_Aboutus = () => {
               >
                 More About <span><i className="fa fa-angle-right" aria-hidden="true"></i></span>
               </Link>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

@@ -15,9 +15,9 @@ export const SectionTitle = ({ title, textColor = 'text-white', bgColor = '#a237
 export const Title_page = ({ title }) => {
   return (
     <div
-      className="about-header relative py-[100px] text-center"
+      className="about-header relative pt-[160px] pb-[100px] text-center"
       style={{
-        backgroundImage: `url(${bg_pluse})`,
+        // backgroundImage: `url(${bg_pluse})`,
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         backgroundColor: '#0000004f',

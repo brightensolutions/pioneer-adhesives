@@ -47,22 +47,17 @@ const CustomArrow = ({ className, style, onClick }) => (
 const Home_Partners = () => {
   const partners = [
     { id: 1, logo: threem },
-    { id: 8, logo: partner8 },
-    { id:11, logo:niccoeng},
+    { id: 2, logo: partner8 },
+    { id: 3, logo:partner5},
     { id: 4, logo: partner4 },
-    { id: 4, logo: hempale },
-    { id: 4, logo: jjgandhi },
-    { id: 3, logo: partner3 },
-    { id: 3, logo: aanadeng },
-    { id: 3, logo: AsianPaints },
-    { id: 3, logo: barger },
-    { id: 1, logo: mas },
-    { id: 2, logo: partner1 },
-    { id: 2, logo: partner2 },
-    { id: 2, logo: partner5 },
-    { id: 2, logo: partner6 },
-    { id: 2, logo: partner7 },
-    { id: 2, logo: partner9 },
+    { id: 5, logo: hempale },
+    { id: 6, logo: partner3 },
+    { id: 7, logo: aanadeng },
+    { id: 8, logo: barger },
+    { id: 9, logo: mas },
+    { id: 10, logo: partner2 },
+    { id: 11, logo: partner6 },
+    { id: 12, logo: partner9 },
   ];
 
   const settings = {

@@ -1,27 +1,14 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { bg_img_slider, bg_pluse, logo2 } from "../../Images/Images";
+import video from "../../Images/video.mp4";
 
 const Specialized = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: false,
-  };
 
   const bgImageVariants = {
     initial: { opacity: 0, scale: 1.2 },
@@ -37,30 +24,19 @@ const Specialized = () => {
   };
 
   return (
-    <div className="relative overflow-hidden">
-      <Slider {...sliderSettings} className="absolute inset-0">
-        {[bg_img_slider, bg_pluse].map((image, index) => (
-          <motion.div
-            key={index}
-            className="relative w-full lg:h-[650px] h-[700px] sm:h-[880px] md:h-[500px]"
-            variants={bgImageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-          >
-            <img
-              src={image}
-              alt={`Banner ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-        ))}
-      </Slider>
+    <div className="relative overflow-hidden pt-[60px]">
+      <video
+        src={video}
+        autoPlay
+        muted
+        loop
+        className="inset-0 w-full h-full object-cover"
+      />
 
       <div className="absolute inset-0 flex flex-col justify-center text-white  bg-opacity-80 px-[20px]">
         <div className="lg:max-w-[1440px] m-auto">
           <div className="flex lg:flex-row md:flex-row items-center flex-col-reverse">
-            <motion.div
+            {/* <motion.div
               className="lg:w-[50%] bg-[#f1f1f187] lg:p-[44px] rounded-[10px] box w-[100%]"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -87,10 +63,10 @@ const Specialized = () => {
                 company incorporated for providing industrial scaffolding and
                 painting at major industries.
               </motion.p>
-            </motion.div>
+            </motion.div> */}
 
-            <motion.div
-              className="md:w-[50%] w-[100%] md:hidden lg:block block"
+            {/* <motion.div
+              className="md:w-[100%] w-[100%] md:hidden lg:block block"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -102,7 +78,7 @@ const Specialized = () => {
                 variants={logoAnimation}
                 animate="animate"
               />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
