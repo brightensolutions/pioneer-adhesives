@@ -78,7 +78,15 @@ import product3 from "../Images/product3.jpg";
 import product4 from "../Images/product4.webp";
 import product5 from "../Images/product5.jpg";
 import product6 from "../Images/product6.webp";
+import slider1 from "../Images/slider1.jpg";
+import slider2 from "../Images/slider2.webp";
+import slider3 from "../Images/slider3.jpg";
+import slider4 from "../Images/slider4.jpg";
 export {
+    slider4,
+    slider2,
+    slider1,
+    slider3,
     Jkpaper,
     leo,
     neostructo,
