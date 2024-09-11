@@ -82,7 +82,13 @@ import slider1 from "../Images/slider1.jpg";
 import slider2 from "../Images/slider2.webp";
 import slider3 from "../Images/slider3.jpg";
 import slider4 from "../Images/slider4.jpg";
+import belzonaimg from "../Images/belzonaimg.jpg";
+import Mcompany from "../Images/3Mcompany.jpg";
+import akzonobel from "../Images/akzonobel.png"
 export {
+    akzonobel,
+    Mcompany,
+    belzonaimg,
     slider4,
     slider2,
     slider1,

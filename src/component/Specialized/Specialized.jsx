@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import { bg_img_slider, bg_pluse, logo2, slider1, slider2, slider3, slider4 } from "../../Images/Images";
+import { akzonobel, belzonaimg, bg_img_slider, bg_pluse, logo2, Mcompany, slider1, slider2, slider3, slider4 } from "../../Images/Images";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,8 +12,8 @@ const Specialized = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: false,
+    autoplaySpeed: 1500,
     fade: true,
   };
 
@@ -21,38 +21,49 @@ const Specialized = () => {
     {
       bgImage: slider1,
       content: (
-        <div className="text-center">
-          {/* <h1 className="text-white text-[58px] font-bold">Slide 1 Title</h1>
-          <p className="text-white text-[20px]">This is the content for slide 1.</p> */}
+        <div className="text-center sm:max-w-[500px] max-w-[350px] p-[10px]">
+          <h1 className="text-white sm:text-[58px] text-[30px] font-bold">Pioneer Adhesives</h1>
+          <h4 className="text-white font-bold sm:text-[30px] text-[25px]">D & H Secheron</h4>
+          <p className="text-white sm:text-[20px] text-[18px]">Pioneer Adhesives is a trusted distributor of DNH Secheron, offering top-quality welding and industrial solutions. We provide innovative products designed to meet the needs of various industries.</p>
         </div>
       ),
     },
     {
-      bgImage: slider4,
+      bgImage: belzonaimg,
       content: (
-        <div className="text-center">
-          {/* <h1 className="text-white text-[58px] font-bold">Slide 1 Title</h1>
-          <p className="text-white text-[20px]">This is the content for slide 1.</p> */}
+        <div className="text-center sm:max-w-[500px] max-w-[350px] p-[10px]">
+          <h1 className="text-white sm:text-[58px] text-[30px] font-bold">Pioneer Adhesives</h1>
+          <h4 className="text-white font-bold sm:text-[30px] text-[25px]">Belzona</h4>
+          <p className="text-white sm:text-[20px] text-[18px]">Pioneer Adhesives proudly distributes Belzona products, offering advanced repair and protection solutions for machinery, equipment, and structures. Our range ensures long-lasting performance in various industrial applications.</p>
         </div>
       ),
     },
     {
-      bgImage: slider2,
+      bgImage: Mcompany,
       content: (
-        <div className="text-center">
-          {/* <h1 className="text-white text-[58px] font-bold">Slide 2 Title</h1>
-          <p className="text-white text-[20px]">This is the content for slide 2.</p> */}
+        <div className="text-center sm:max-w-[500px] max-w-[350px] p-[10px]">
+          <h1 className="text-white sm:text-[58px] text-[30px] font-bold">Pioneer Adhesives</h1>
+          <h4 className="text-white font-bold sm:text-[30px] text-[25px]">3M Company</h4>
+          <p className="text-white sm:text-[20px] text-[18px]">Pioneer Adhesives supplies high-quality safety gear from 3M and advanced repair solutions from Belzona, ensuring reliable protection for both personal safety and machinery.</p>
         </div>
       ),
+    },
+    {
+      bgImage: akzonobel,
+      content: (
+        <div className="text-center sm:max-w-[500px] max-w-[350px] p-[10px]">
+          <h1 className="text-white sm:text-[58px] text-[30px] font-bold">Akzonobel</h1>
+          <h4 className="text-white font-bold text-[30px]">3M Company</h4>
+          <p className="text-white sm:text-[20px] text-[18px]">Pioneer Adhesives provides AkzoNobel's Nordsjö paints for Artscape’s urban art projects. These vibrant murals, created with our high-quality paints, enhance cityscapes and foster community spirit.</p>
+        </div>
+      ),
+    },
+    {
+      bgImage: slider2
     },
     {
       bgImage: slider3,
-      content: (
-        <div className="text-center">
-          {/* <h1 className="text-white text-[58px] font-bold">Slide 3 Title</h1>
-          <p className="text-white text-[20px]">This is the content for slide 3.</p> */}
-        </div>
-      ),
+
     },
   ];
 
@@ -74,7 +85,7 @@ const Specialized = () => {
             />
 
             {/* Content */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+            <div className="absolute top-[18%] flex flex-col items-end justify-end z-10 right-0 bg-[#0000005c] md:p-[65px] border-[2px] border-r-0">
               {slide.content}
             </div>
           </div>
