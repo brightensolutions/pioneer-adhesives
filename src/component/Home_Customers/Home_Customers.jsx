@@ -5,7 +5,7 @@ import { alt, amns, bayer, Birla, bp, bpcl, coromandal, customer1, customer10, c
 import { Title_page } from '../Function/Function';
 
 const customers = [
-  customer1, amns,customer6,lt,suzlonlogo,customer13,ShellLogo, customer4,bpcl, customer7, customer14,gnfc,bayer,customer10,Birla,Jkpaper,leo,neostructo,sikka,bp,coromandal,LARSENTOURBO,gardenvarely,gipcl,gcpl,itw,sterling,uplltd,yamai,zeeco
+  customer1, amns,customer6,lt,suzlonlogo,customer13, customer4,bpcl, customer7, customer14,gnfc,bayer,customer10,Birla,Jkpaper,neostructo,coromandal,gipcl,sterling,uplltd,zeeco
 ];
 
 const Home_Customers = () => {

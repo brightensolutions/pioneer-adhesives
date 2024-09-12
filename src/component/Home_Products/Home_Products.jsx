@@ -1,18 +1,18 @@
 import React from "react";
-import { auto_light, CommercialConstruction, electrical_tapes, hylomarproducts, industrialcleaner, ips_product, LeakRepai, MASSEALINGSYSTEMS, mseal, product1, product2, product3, product4, product5, product6, Rubber_Repair_Protection, threeMsefty, Welding_Consumables } from "../../Images/Images";
+import { auto_light, CommercialConstruction, dhlogo, electrical_tapes, hempale, hylomarproducts, industrialcleaner, ips_product, LeakRepai, MASSEALINGSYSTEMS, molygraph, mseal, paintproduct, partner2, partner5, partner8, partner9, product1, product2, product3, product4, product5, product6, product7, prolite, Rubber_Repair_Protection, soudal, soudalproduct, threem, threeMsefty, Welding_Consumables } from "../../Images/Images";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";  // Import useLocation
 import { SectionTitle } from "../Function/Function";
 
-const ProductItem = ({ image, title, id }) => {
+const ProductItem = ({ image, title, logo, id, link }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   const variants = {
-    hidden: { opacity: 0, x: 20, y: 20 }, // Add x-direction animation
+    hidden: { opacity: 0, x: 20, y: 20 },
     visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.5 } },
   };
 
@@ -27,184 +27,114 @@ const ProductItem = ({ image, title, id }) => {
         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
         transition: { duration: 0.3 }
       }}
-      className="xl:w-[30.32%] lg:w-[33%]  product-card product_card rounded-t-[10px] flex flex-col bg-white sm:w-[47.9%]"
+      className="xl:w-[30.32%] lg:w-[33%] product-card product_card rounded-t-[10px] flex flex-col bg-white sm:w-[47.9%]"
     >
-      <div className="border-b-2">
-        <img
-          src={image}
-          alt={title}
-          className="w-[100%] lg:max-h-[268px] rounded-t-[7px] lg:min-h-[268px]"
-        />
-      </div>
-      <div className="flex flex-col flex-grow justify-center items-center">
-        <div className="p-[15px] flex justify-center items-center">
-          <h1 className="text-[23px] font-oxanium mb-[10px] font-bold text-center">
-            {title}
-          </h1>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className="border-b-2">
+          <img
+            src={image}
+            alt={title}
+            className="w-[100%] lg:max-h-[268px] rounded-t-[7px] lg:min-h-[268px]"
+          />
         </div>
-      </div>
-      {/* <div className="bg-customRed py-[13px] mt-auto">
-        <Link
-          to={`/productview/${id}`}
-          className="flex gap-x-[10px] text-center justify-center lg:text-[19px] text-white font-oxanium"
-        >
-          I Have Required <span><i className="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-        </Link>
-      </div> */}
+        <div className="flex flex-col flex-grow justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src={logo} alt="logo" className="w-[90px] min-h-[50px]" />
+          </div>
+        </div>
+      </a>
     </motion.div>
   );
 };
+
 export const products = [
   {
     id: 1,
     image: product1,
-    title: "D & H Secheron",
-    features: [
-      "Rubber Repair and Protection",
-      "Weather and Waterproofing Systems",
-      "High-Temperature Coatings",
-      "Corrosion Protection",
-      "Concrete Protection",
-      "Safety Grip Systems",
-      "Chocking Materials"
-    ],
-    description: "D&H Sécheron group has been in the forefront within the Indian welding fraternity since its inception in 1966. An ISO 9001-2008 company, a leading name in India and overseas welding industry offers a comprehensive package of welding products and services."
+    logo: dhlogo,
+    link: "https://www.dnhsecheron.com/"
   },
   {
     id: 2,
     image: product2,
-    title: "Belzona",
-    features: [
-      "Welding Consumables (Welding Electrodes, Welding Wires & Fluxes)",
-      "Welding & Cutting Equipment",
-      "Wear liner plates for various applications",
-      "Welding Training – various levels of people in the field of welding",
-      "Fabrication (Pressure Vessels, Heat Exchangers etc)",
-    ],
-    description: "D&H Sécheron group has been in the forefront within the Indian welding fraternity since its inception in 1966. An ISO 9001-2008 company, a leading name in India and overseas welding industry offers a comprehensive package of welding products and services."
+    logo: partner5,
+    link: "https://belzona.com/en/index.aspx"
   },
   {
     id: 3,
     image: product3,
-    title: "3M Electrical Tapes",
-    features: [
-      "Power Cable Accessories",
-      "Maintenance, Repair & Overhaul (MRO) Electrical Products",
-      "OEM Electrical Products",
-      "Vinyl Electrical Tapes",
-      "Mastic Tapes – Sealing & Insulation",
-      "Rubber Tapes – Insulation & Splicing",
-      "Heat shrink Sleeves",
-    ],
-    description: "The Electrical Solutions portfolio from 3M addresses the wide and varied requirements of power generation, transmission and distribution besides effectively catering to exacting needs of users across the Industrial, Construction & Maintenance, Electrical & Electronic OEM and Electrical Utility sectors. <br> With a wide range of products like Splice, termination, insulation materials, electrical tapes and other power cable accessories,3M has a solution for your every need, with a promise of quality, durability & safety - powered by 3M Innovation."
-  },
-  {
-    id: 6,
-    image: auto_light,
-    title: "prolite autoglo",
-    features: [
-      "from any flaws.",
-      "Auto Glow Sinages",
-    ],
-    description: "Our organization, ProliteAutoglo Limited, was established in 2007, which have been engrossed in manufacturing a commendable array of Lights and Signage’s. In addition to this, we are providing Emergency Lights, Exit Lights and Solar Products to our prestigious clients. Offered product range is highly acclaimed by the customers for their low maintenance, easy installation, high operational efficiency as well as long lasting functionality. Owing to these salient features, our offered products are highly demanded in the several industries. The provided products by us are optimum in terms of quality and free from any flaws."
+    logo: threem,
+    link: "https://www.3mindia.in/3M/en_IN/company-in/"
   },
   {
     id: 4,
-    image: product4,
-    title: "pidilite",
-    features: [
-      "Lubricants/Penetrants",
-      " Corrosion Inhibitors",
-      "Electronic Cleaners",
-      "Industrial Degreasers",
-      "Greases",
-      "Cutting Fluids",
-      "Power Fluids",
-      " Specialty MRO",
-    ],
-    description: "AS A LEADER IN THE MRO INDUSTRY for more than five decades, LPS brand products has provided convenience-packaged maintenance chemicals to industrial, aerospace, military and telecommunications facilities world-wide. ITW Pro Brandsis an Illinois Tool Works (ITW) company. ITW is a leading global diversified manufacturer, designing and producing a wide array of engineered and specialty products. ITW was founded 100 years ago and is a Fortune 200 Company with revenues over $15 billion. <br>The LPS brand is recognized worldwide in the industrial channel as the value-added premium product. We offer over seven categories of products for Maintenance, Repair, and Overhaul (MRO). Our products maintain equipment's efficiency and productivity, preventing costly downtime, while meeting and exceeding specifications for leading automotive, industrial, manufacturer, military, and utilities."
-  },
-  {
-    id: 10,
-    image: industrialcleaner,
-    title: "Molygraph®",
-    features: [
-      "Lubricating Greases",
-      "Industrial Cleaners & Degreasers",
-      "Food Grade Lubricants",
-      "Industrial Cleaners & Degreasers",
-      "Lubricating Greases",
-      "Lubricating Oils",
-      "Lubricating Pastes",
-      "Metal Forming Lubricants",
-      "Metal Working Fluids",
-      "MRO",
-      "Rust Preventives",
-      "Thread Dope Compound",
-    ],
-    description: "Established in 1984, Molygraph® began with the aim of being better than the best. In the years since then, we have become synonymous with high quality speciality lubricants and maintenance, repairs & operation products that have won us loyal customers across India."
-  },
-  {
-    id: 12,
-    image: product5,
-    title: "Akzonobel",
-    features: [
-      "Non-Setting Jointing Compounds",
-      "Silicone Sealants",
-      "Anaerobic – Thread Sealers, Lockers & Retainers",
-      "Epoxy Adhesives & Putties",
-      "Pre-Applied Adhesives & Sealants",
-      "Exhaust Products",
-      "MS Polymers",
-      "Structural Adhesives",
-      "Instant Adhesives"
-    ],
-    description: "Hylomar Limited manufactures a wide range of high performance sealants and adhesives used by some of the leading OEM’s in the world of automotive, aerospace, white goods, power generation/distribution, electronics/photonics and general engineering. <br> Hylomar products are also widely used and respected in the automotive, aerospace and industrial aftermarkets with Hylomar Universal Blue and Hylomar M probably being the leading non-setting gasket & jointing compounds in the world. <br>HylomarAerograde, Aerograde Ultra and Advanced Formulation are specified by various aero-engine manufacturers; including Rolls-Royce and Pratt & Whitney. HylomarAerograde is also specified by NATO. <br> Hylomar RTV silicone sealants are used to seal engines, gearboxes and transmissions for leading vehicle manufacturers around the globe with our amine curing products being particularly favoured <br>In addition, unlike many sealant and adhesive companies, Hylomar Limited are manufacturers and product formulators  Therefore, if commercially viable, we can develop products to specific customer requirements."
+    image: auto_light,
+    logo: prolite,
+    link: "https://www.prolite.in/"
   },
   {
     id: 5,
-    image: product6,
-    title: "Hempel",
-    features: [
-      "Respiratory Protection",
-      "Hearing Protection",
-    ],
-    description: "Products that work as hard as you do. From the most basic to the most specialized needs, 3M offers the health and safety protection you and your workers need most, so everyone can perform at their best."
+    image: product4,
+    logo: partner9,
+    link: "https://www.pidilite.com/"
+  },
+  {
+    id: 6,
+    image: product7,
+    logo: molygraph,
+    link: "https://www.molygraph.com/"
   },
   {
     id: 7,
-    image: hylomarproducts,
-    title: "hylomer products",
-    features: [
-      "Leak Repair ",
-      "Pipe Remediation",
-      "Corrosion Control",
-      "Easy to apply",
-    ],
-    description: "InduMar's product line has developed since 1986 from the Stop It® Pipe Repair System to include our formulated high strength systems for more demanding application, and the addition of the Viscotaq line of corrosion control products. We operate in all markets where pipe leaks and corrosion are a problem. <br>InduMar Products has been helping companies repair pipe and fitting leaks and get back online, quickly and safely for 30 years. As leaders in the field of leak repair, we offer the products and services you need."
+    image: product5,
+    logo: partner8,
+    link: "https://www.akzonobel.com/en"
   },
-  
+  {
+    id: 8,
+    image: product6,
+    logo: hempale,
+    link: "https://www.hempel.com/"
+  },
+  {
+    id: 9,
+    image: hylomarproducts,
+    logo: partner2,
+    link: "https://hylomar.com/"
+  },
+  {
+    id: 10,
+    image: soudalproduct,
+    logo: soudal,
+    link: "https://soudal.in/"
+  },
 ];
 
 const Home_Products = () => {
+  const location = useLocation();  // Get the current location
+
   return (
     <div className="bg-[#cfc9c954] lg:py-[100px] py-[50px] overflow-hidden">
       <div className="lg:max-w-[1440px] m-auto px-[20px]">
-        <div className="text-center lg:mb-[50px]">
-          <SectionTitle
-            title="Our Products"
-            textColor="text-white"
-            bgColor="#2569ac"
-          />
-        </div>
-        <div className="lg:mt-[100px] flex lg:flex-row flex-wrap  lg:gap-[48px] xl:gap-[49px] 2xl:gap-[50px] gap-[25px] ">
+        {/* Conditionally render the SectionTitle */}
+        {location.pathname !== "/product" && (
+          <div className="text-center lg:mb-[50px]">
+            <SectionTitle
+              title="Our Products"
+              textColor="text-white"
+              bgColor="#2569ac"
+            />
+          </div>
+        )}
+        <div className=" flex justify-center lg:flex-row flex-wrap lg:gap-[48px] xl:gap-[49px] 2xl:gap-[50px] gap-[25px]">
           {products.map((product) => (
             <ProductItem
               key={product.id}
               id={product.id}
               image={product.image}
-              title={product.title}
-              features={product.features}
+              title={product.title}  // Adjust title or remove if not used
+              logo={product.logo}
+              link={product.link}
             />
           ))}
         </div>

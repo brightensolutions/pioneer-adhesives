@@ -42,7 +42,7 @@ const Home_Contactus = () => {
                                 >
                                     <span className='text-customRed lg:text-[55px] text-[50px] '><i className="fa fa-map-marker" aria-hidden="true"></i></span>
                                     <p className='lg:text-[20px] font-poppins text-black text-center md:text-left'>
-                                        Pioneer Scaffolding And Painting Contractors 1004, Icon Business Center, Opp Central Mall, Piplod, Surat, Gujarat 395007
+                                       Pionner Adhesives 1004, Icon Business Center, Opp Central Mall, Piplod, Surat, Gujarat 395007
                                     </p>
                                 </motion.div>
 

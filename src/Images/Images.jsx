@@ -85,7 +85,29 @@ import slider4 from "../Images/slider4.jpg";
 import belzonaimg from "../Images/belzonaimg.jpg";
 import Mcompany from "../Images/3Mcompany.jpg";
 import akzonobel from "../Images/akzonobel.png"
+import DandH from "../Images/DandH.webp";
+import dns from "../Images/dns.jpg";
+import Hempel from "../Images/Hempel.jpg";
+import mccoy from "../Images/mccoy.jpg"
+import dhlogo from "../Images/dhlogo.png";
+import prolite from "../Images/prolite.jpg";
+import paintproduct from "../Images/paintproduct.jpg";
+import product7 from "../Images/product7.jpg";
+import molygraph from "../Images/molygraph.jpg";
+import soudalproduct from "../Images/soudalproduct.jpg";
+import soudal from "../Images/soudal.png";
 export {
+    soudal,
+    soudalproduct,
+    molygraph,
+    product7,
+    paintproduct,
+    prolite,
+    dhlogo,
+    mccoy,
+    Hempel,
+    dns,
+    DandH,
     akzonobel,
     Mcompany,
     belzonaimg,
