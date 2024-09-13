@@ -1,11 +1,11 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { alt, amns, bayer, Birla, bp, bpcl, coromandal, customer1, customer10, customer11, customer12, customer13, customer14, customer2, customer3, customer4, customer6, customer7, customer8, customer9, ehes, gardenvarely, gcpl, gipcl, gnfc, itw, Jkpaper, LARSENTOURBO, leo, lt, neostructo, ShellLogo, sikka, sterling, suzlonlogo, uplltd, yamai, zeeco } from '../../Images/Images';
+import { aarti, alt, amns, bayer, Birla, bp, bpcl, coromandal, customer1, customer10, customer11, customer12, customer13, customer14, customer2, customer3, customer4, customer6, customer7, customer8, customer9, ehes, gardenvarely, gcpl, gipcl, gnfc, itw, Jkpaper, LARSENTOURBO, leo, lt, neostructo, ShellLogo, sikka, sterling, suzlonlogo, uplltd, yamai, zeeco } from '../../Images/Images';
 import { Title_page } from '../Function/Function';
 
 const customers = [
-  customer1, amns,customer6,lt,suzlonlogo,customer13, customer4,bpcl, customer7, customer14,gnfc,bayer,customer10,Birla,Jkpaper,neostructo,coromandal,gipcl,sterling,uplltd,zeeco
+  customer1, amns,customer6,lt,suzlonlogo,customer13, customer4,bpcl, customer7, customer14,gnfc,bayer,customer10,Birla,aarti,neostructo,coromandal,gipcl,sterling,uplltd,zeeco
 ];
 
 const Home_Customers = () => {

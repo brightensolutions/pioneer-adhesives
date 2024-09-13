@@ -96,7 +96,9 @@ import product7 from "../Images/product7.jpg";
 import molygraph from "../Images/molygraph.jpg";
 import soudalproduct from "../Images/soudalproduct.jpg";
 import soudal from "../Images/soudal.png";
+import aarti from "../Images/aarti.png"
 export {
+    aarti,
     soudal,
     soudalproduct,
     molygraph,

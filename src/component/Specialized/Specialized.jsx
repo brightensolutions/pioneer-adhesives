@@ -73,9 +73,6 @@ const Specialized = () => {
     {
       bgImage:dns,
     },
-    {
-      bgImage:DandH,
-    },
   ];
 
   return (

@@ -25,7 +25,7 @@ const Home_Aboutus = () => {
           >
             <div className='absolute right-0 bottom-0 since_div'>
               <h1 className='lg:text-[35px] font-oxanium text-white'>SINCE</h1>
-              <p className='text-center font-poppins lg:text-[20px] text-white'>2003</p>
+              <p className='text-center font-poppins lg:text-[20px] text-white'>1995</p>
             </div>
           </motion.div>
 
