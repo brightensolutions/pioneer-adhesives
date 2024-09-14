@@ -39,7 +39,7 @@ const Home_Customers = () => {
             <motion.img
               key={index}
               src={customer}
-              className='bg-customBlue p-[1px] sm:w-[180px] w-[137px] min-h-[100px] max-h-[100px]'
+              className=' sm:w-[180px] w-[137px] min-h-[100px] max-h-[100px] border-[1px] p-[5px] border-black'
               variants={imageVariants}
             />
           ))}

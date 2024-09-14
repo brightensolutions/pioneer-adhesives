@@ -23,6 +23,8 @@ import {
   barger,
   mas,
   pidilite,
+  product7,
+  molygraph,
 } from "../../Images/Images";
 import { SectionTitle } from "../Function/Function";
 
@@ -52,7 +54,7 @@ const Home_Partners = () => {
     { id: 4, logo: partner4 },
     { id: 5, logo: hempale },
     { id: 6, logo: partner3 },
-    { id: 7, logo: aanadeng },
+    { id: 7, logo: molygraph },
     { id: 8, logo: barger },
     { id: 9, logo: mas },
     { id: 10, logo: partner2 },

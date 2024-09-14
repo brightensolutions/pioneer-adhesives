@@ -39,7 +39,7 @@ const ProductItem = ({ image, title, logo, id, link }) => {
         </div>
         <div className="flex flex-col flex-grow justify-center items-center">
           <div className="flex justify-center items-center">
-            <img src={logo} alt="logo" className="w-[90px] min-h-[50px]" />
+            <img src={logo} alt="logo" className="w-[130px] min-h-[50px]" />
           </div>
         </div>
       </a>
@@ -132,7 +132,7 @@ const Home_Products = () => {
               key={product.id}
               id={product.id}
               image={product.image}
-              title={product.title}  // Adjust title or remove if not used
+              title={product.title} 
               logo={product.logo}
               link={product.link}
             />
