@@ -96,8 +96,12 @@ import product7 from "../Images/product7.jpg";
 import molygraph from "../Images/molygraph.jpg";
 import soudalproduct from "../Images/soudalproduct.jpg";
 import soudal from "../Images/soudal.png";
-import aarti from "../Images/aarti.png"
+import aarti from "../Images/aarti.png";
+import Interior from "../Images/Interior.webp";
+import antiseizetapes  from "../Images/anti-seize-tapes.jpg";
 export {
+    antiseizetapes,
+    Interior,
     aarti,
     soudal,
     soudalproduct,

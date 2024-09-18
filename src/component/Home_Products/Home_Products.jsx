@@ -1,5 +1,5 @@
 import React from "react";
-import { auto_light, CommercialConstruction, dhlogo, electrical_tapes, hempale, hylomarproducts, industrialcleaner, ips_product, LeakRepai, MASSEALINGSYSTEMS, molygraph, mseal, paintproduct, partner2, partner5, partner8, partner9, product1, product2, product3, product4, product5, product6, product7, prolite, Rubber_Repair_Protection, soudal, soudalproduct, threem, threeMsefty, Welding_Consumables } from "../../Images/Images";
+import { antiseizetapes, auto_light, barger, CommercialConstruction, dhlogo, electrical_tapes, hempale, hylomarproducts, industrialcleaner, Interior, ips_product, LeakRepai, mas, MASSEALINGSYSTEMS, molygraph, mseal, paintproduct, partner2, partner5, partner8, partner9, product1, product2, product3, product4, product5, product6, product7, prolite, Rubber_Repair_Protection, soudal, soudalproduct, threem, threeMsefty, Welding_Consumables } from "../../Images/Images";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";  // Import useLocation
@@ -113,6 +113,18 @@ export const products = [
     image: soudalproduct,
     logo: soudal,
     link: "https://soudal.in/"
+  },
+  {
+    id: 11,
+    image: Interior,
+    logo: barger,
+    link: "https://www.bergerpaints.com/"
+  },
+  {
+    id: 12,
+    image: antiseizetapes,
+    logo: mas,
+    link: "https://www.masseal.com/"
   },
 ];
 
