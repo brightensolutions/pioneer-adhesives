@@ -25,27 +25,33 @@ const ProductItem = ({ image, title, logo, id, link }) => {
       whileHover={{
         scale: 1.05,
         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
-        transition: { duration: 0.3 }
+        transition: { duration: 0.3 },
       }}
-      className="xl:w-[30.32%] lg:w-[33%] product-card product_card rounded-t-[10px] flex flex-col bg-white sm:w-[47.9%]"
+      className="xl:w-[30.32%] lg:w-[33%] rounded-[10px] flex flex-col bg-white sm:w-[47.9%] " 
     >
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <div className="border-b-2">
+        <div className="flex justify-center items-center h-[250px] border-b-2">  
           <img
             src={image}
             alt={title}
-            className="w-[100%] lg:max-h-[268px] rounded-t-[7px] lg:min-h-[268px]"
+            className="w-[100%] h-[100%] object-cover"  
           />
         </div>
-        <div className="flex flex-col flex-grow justify-center items-center">
+        <div className="flex justify-center items-center flex-grow h-[150px]">  
           <div className="flex justify-center items-center">
-            <img src={logo} alt="logo" className="w-[130px] min-h-[50px]" />
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[150px]"  
+            />
           </div>
         </div>
       </a>
     </motion.div>
   );
 };
+
+
 
 export const products = [
   {
