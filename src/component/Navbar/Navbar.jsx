@@ -39,8 +39,8 @@ const Navbar = () => {
                         to={item.link}
                         className={({ isActive }) =>
                           isActive
-                            ? "text-customRed relative border-b-2 border-customRed pb-1 hover:border-none"
-                            : "text-customBlue relative group-hover:text-customBlue pb-1"
+                            ? "text-customRed relative border-b-2 border-customRed pb-1 hover:border-none font-bold"
+                            : "text-customBlue relative group-hover:text-customBlue pb-1 font-bold"
                         }
                       >
                         {item.name}
