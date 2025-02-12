@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ Suspense, lazy, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./component/Navbar/Navbar";
 import Home from "./component/Home/Home";
@@ -10,12 +10,22 @@ import Aboutus from "./component/Aboutus/Aboutus";
 import Partners from "./component/Partners/Partners";
 import Contactus from "./component/Contactus/Contactus";
 import Home_Customers from "./component/Home_Customers/Home_Customers";
+import Loader from "./component/Loader/Loader";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // This effect will run once when the component mounts
+    // We're not changing the loading state, so it will always stay true
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
       <Navbar/>
+      {isLoading ? (
+        <Loader />
+      ) : (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productview/:id" element={<ProductDetail />} />
@@ -25,6 +35,7 @@ const App = () => {
         <Route path="/clients" element={<Home_Customers />} />
         <Route path="/contactus" element={<Contactus />} />
       </Routes>
+      )}
       <Footer />
     </Router>
   );
