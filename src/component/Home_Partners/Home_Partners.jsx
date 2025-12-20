@@ -50,12 +50,12 @@ const Home_Partners = () => {
   const partners = [
     { id: 1, logo: threem },
     { id: 2, logo: partner8 },
-    { id: 3, logo:partner5},
+    { id: 3, logo: partner5 },
     { id: 4, logo: partner4 },
     { id: 5, logo: hempale },
     { id: 6, logo: partner3 },
     { id: 7, logo: molygraph },
-    { id: 8, logo: barger },
+    { id: 8, logo: AsianPaints },
     { id: 9, logo: mas },
     { id: 10, logo: partner2 },
     { id: 11, logo: partner6 },
@@ -114,8 +114,15 @@ const Home_Partners = () => {
                 className="flex items-center justify-center bg-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: partner.id * 0.1, ease: "easeOut" }}
-                whileHover={{ scale: 1.1, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)" }}
+                transition={{
+                  duration: 0.6,
+                  delay: partner.id * 0.1,
+                  ease: "easeOut",
+                }}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+                }}
               >
                 <img
                   src={partner.logo}
