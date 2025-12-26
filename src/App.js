@@ -1,5 +1,5 @@
-import React,{ Suspense, lazy, useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { Suspense, lazy, useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar/Navbar";
 import Home from "./component/Home/Home";
 import ProductDetail from "./component/ProductDetail/ProductDetail";
@@ -12,11 +12,10 @@ import Contactus from "./component/Contactus/Contactus";
 import Home_Customers from "./component/Home_Customers/Home_Customers";
 
 const App = () => {
-
   return (
     <Router>
       <ScrollToTop />
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productview/:id" element={<ProductDetail />} />
