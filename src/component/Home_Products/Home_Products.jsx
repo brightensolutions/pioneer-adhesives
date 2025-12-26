@@ -3,7 +3,8 @@ import {
   antiseizetapes,
   auto_light,
   barger,
-  AsianPaints,
+  // AsianPaints,
+  apppglogo,
   CommercialConstruction,
   dhlogo,
   electrical_tapes,
@@ -148,8 +149,8 @@ export const products = [
   {
     id: 11,
     image: Interior,
-    logo: AsianPaints,
-    link: "https://www.asianpaints.com/colour-catalogue.html",
+    logo: apppglogo,
+    link: "https://www.asianpaintsppg.com/",
   },
   {
     id: 12,
