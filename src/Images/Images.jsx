@@ -99,6 +99,7 @@ import soudal from "../Images/soudal.png";
 import aarti from "../Images/aarti.png";
 import Interior from "../Images/Interior.webp";
 import antiseizetapes  from "../Images/anti-seize-tapes.jpg";
+import apppglogo  from "../Images/apppglogo.png";
 export {
     antiseizetapes,
     Interior,
@@ -200,5 +201,6 @@ export {
     product3,
     product4,
     product5,
-    product6
+    product6,
+    apppglogo
 }
