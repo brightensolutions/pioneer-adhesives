@@ -5,6 +5,7 @@ import {
   barger,
   // AsianPaints,
   apppglogo,
+  asian,
   CommercialConstruction,
   dhlogo,
   electrical_tapes,
@@ -148,7 +149,7 @@ export const products = [
   },
   {
     id: 11,
-    image: Interior,
+    image: asian,
     logo: apppglogo,
     link: "https://www.asianpaintsppg.com/",
   },

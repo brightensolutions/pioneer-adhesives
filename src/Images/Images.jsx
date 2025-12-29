@@ -1,5 +1,5 @@
 import logo from "../Images/logo.png";
-import bg_img_slider  from "../Images/bg_img_slider.jpg";
+import bg_img_slider from "../Images/bg_img_slider.jpg";
 import logo2 from "../Images/logo2.png";
 import partner1 from "../Images/partner1.jpg";
 import partner2 from "../Images/partner2.png";
@@ -15,18 +15,18 @@ import Rubber_Repair_Protection from "../Images/Rubber_Repair_Protection.jpg";
 import Welding_Consumables from "../Images/Welding_Consumables.jpg";
 import electrical_tapes from "../Images/electrical-tapes.webp";
 import ips_product from "../Images/lps_product.png";
-import threeMsefty  from "../Images/3Msefty.png";
+import threeMsefty from "../Images/3Msefty.png";
 import auto_light from "../Images/auto_light.webp";
 import LeakRepai from "../Images/LeakRepai.jpg";
 import mseal from "../Images/mseal.png";
 import MASSEALINGSYSTEMS from "../Images/MASSEALINGSYSTEMS.jpg";
-import industrialcleaner  from "../Images/industrial-cleaner-.webp";
+import industrialcleaner from "../Images/industrial-cleaner-.webp";
 import CommercialConstruction from "../Images/CommercialConstruction.jpg";
 import hylomarproducts from "../Images/hylomarproducts.jpg";
 import about_us_bg from "../Images/about_us_bg.webp";
 import customer1 from "../Images/customer1.jpg";
 import customer2 from "../Images/customer2.jpg";
-import customer3 from "../Images/customer4.jpg"
+import customer3 from "../Images/customer4.jpg";
 import bg_pluse from "../Images/titlebg.webp";
 import customer4 from "../Images/customer3.jpg";
 import customer6 from "../Images/customer6.png";
@@ -50,7 +50,7 @@ import pidilite from "../Images/pidilite.jpg";
 import amns from "../Images/amns.gif";
 import alt from "../Images/alt.gif";
 import lt from "../Images/lt.gif";
-import suzlonlogo from "../Images/suzlon-logo.png"; 
+import suzlonlogo from "../Images/suzlon-logo.png";
 import ShellLogo from "../Images/shell.png";
 import bpcl from "../Images/bpcl.png";
 import gnfc from "../Images/gnfc.png";
@@ -66,7 +66,7 @@ import gardenvarely from "../Images/gardenvarely.jpg";
 import gipcl from "../Images/gipcl.png";
 import gcpl from "../Images/gcpl.jpg";
 import itw from "../Images/itw.png";
-import sterling from "../Images/sterling (1).jpg"
+import sterling from "../Images/sterling (1).jpg";
 import uplltd from "../Images/uplltd.jpg";
 import yamai from "../Images/yamai.png";
 import zeeco from "../Images/zeeco.jpg";
@@ -84,11 +84,11 @@ import slider3 from "../Images/slider3.jpg";
 import slider4 from "../Images/slider4.jpg";
 import belzonaimg from "../Images/belzonaimg.jpg";
 import Mcompany from "../Images/3Mcompany.jpg";
-import akzonobel from "../Images/akzonobel.png"
+import akzonobel from "../Images/akzonobel.png";
 import DandH from "../Images/DandH.webp";
 import dns from "../Images/dns.jpg";
 import Hempel from "../Images/Hempel.jpg";
-import mccoy from "../Images/mccoy.jpg"
+import mccoy from "../Images/mccoy.jpg";
 import dhlogo from "../Images/dhlogo.png";
 import prolite from "../Images/prolite.jpg";
 import paintproduct from "../Images/paintproduct.jpg";
@@ -98,109 +98,111 @@ import soudalproduct from "../Images/soudalproduct.jpg";
 import soudal from "../Images/soudal.png";
 import aarti from "../Images/aarti.png";
 import Interior from "../Images/Interior.webp";
-import antiseizetapes  from "../Images/anti-seize-tapes.jpg";
-import apppglogo  from "../Images/apppglogo.png";
+import antiseizetapes from "../Images/anti-seize-tapes.jpg";
+import apppglogo from "../Images/apppglogo.png";
+import asian from "../Images/asian.jpg";
 export {
-    antiseizetapes,
-    Interior,
-    aarti,
-    soudal,
-    soudalproduct,
-    molygraph,
-    product7,
-    paintproduct,
-    prolite,
-    dhlogo,
-    mccoy,
-    Hempel,
-    dns,
-    DandH,
-    akzonobel,
-    Mcompany,
-    belzonaimg,
-    slider4,
-    slider2,
-    slider1,
-    slider3,
-    Jkpaper,
-    leo,
-    neostructo,
-    sikka,
-    bp,
-    ehes,
-    gardenvarely,
-    gipcl,
-    gcpl,
-    itw,
-    sterling,
-    uplltd,
-    yamai,
-    zeeco,
-    logo,
-    bg_img_slider,
-    logo2,
-    partner1,
-    partner2,
-    partner3,
-    partner4,
-    partner5,
-    partner6,
-    partner7,
-    partner8,
-    partner9,
-    partner10,
-    Rubber_Repair_Protection,
-    Welding_Consumables,
-    electrical_tapes,
-    ips_product,
-    threeMsefty,
-    auto_light,
-    LeakRepai,
-    mseal,
-    MASSEALINGSYSTEMS,
-    industrialcleaner,
-    CommercialConstruction,
-    hylomarproducts,
-    about_us_bg,
-    customer1,
-    customer2,
-    customer4,
-    bg_pluse,
-    customer3,
-    customer6,
-    customer7, 
-    customer8,
-    customer9,
-    customer10,
-    customer11,
-    customer12,
-    customer13,
-    customer14,
-    threem,
-    niccoeng,
-    hempale,
-    jjgandhi,
-    aanadeng,
-    AsianPaints,
-    barger,
-    mas,
-    pidilite,
-    amns,
-    alt,
-    lt,
-    suzlonlogo,
-    ShellLogo,
-    bpcl,
-    gnfc,
-    bayer,
-    Birla,
-    coromandal,
-    LARSENTOURBO,
-    product1,
-    product2,
-    product3,
-    product4,
-    product5,
-    product6,
-    apppglogo
-}
+  antiseizetapes,
+  Interior,
+  aarti,
+  soudal,
+  soudalproduct,
+  molygraph,
+  product7,
+  paintproduct,
+  prolite,
+  dhlogo,
+  mccoy,
+  Hempel,
+  dns,
+  DandH,
+  akzonobel,
+  Mcompany,
+  belzonaimg,
+  slider4,
+  slider2,
+  slider1,
+  slider3,
+  Jkpaper,
+  leo,
+  neostructo,
+  sikka,
+  bp,
+  ehes,
+  gardenvarely,
+  gipcl,
+  gcpl,
+  itw,
+  sterling,
+  uplltd,
+  yamai,
+  zeeco,
+  logo,
+  bg_img_slider,
+  logo2,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+  partner8,
+  partner9,
+  partner10,
+  Rubber_Repair_Protection,
+  Welding_Consumables,
+  electrical_tapes,
+  ips_product,
+  threeMsefty,
+  auto_light,
+  LeakRepai,
+  mseal,
+  MASSEALINGSYSTEMS,
+  industrialcleaner,
+  CommercialConstruction,
+  hylomarproducts,
+  about_us_bg,
+  customer1,
+  customer2,
+  customer4,
+  bg_pluse,
+  customer3,
+  customer6,
+  customer7,
+  customer8,
+  customer9,
+  customer10,
+  customer11,
+  customer12,
+  customer13,
+  customer14,
+  threem,
+  niccoeng,
+  hempale,
+  jjgandhi,
+  aanadeng,
+  AsianPaints,
+  barger,
+  mas,
+  pidilite,
+  amns,
+  alt,
+  lt,
+  suzlonlogo,
+  ShellLogo,
+  bpcl,
+  gnfc,
+  bayer,
+  Birla,
+  coromandal,
+  LARSENTOURBO,
+  product1,
+  product2,
+  product3,
+  product4,
+  product5,
+  product6,
+  apppglogo,
+  asian,
+};
